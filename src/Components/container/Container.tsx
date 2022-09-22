@@ -7,6 +7,8 @@ import Profile from "../Profile/Profile";
 import GoUp from "../GoUp/GoUp";
 import Work from "../Work/Work";
 import About from "../About/About";
+
+
 export default function Container() {
   // console.log(document.getElementById("Home"), "Home");
   useEffect(() => {
@@ -23,6 +25,7 @@ export default function Container() {
       <Profile />
       <About />
       <GoUp />
+   
     </Fragment>
   );
 }

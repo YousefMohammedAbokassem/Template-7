@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Profile.css";
+
 import axios, { AxiosResponse } from "axios";
 import { setInterval } from "timers";
 export default function Profile() {
