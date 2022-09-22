@@ -1,0 +1,41 @@
+:root {
+  --main-color: #fff;
+  --text-color: #000;
+  --SpText-color: #eb5424;
+  --main-transition: 0.5s;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+*::-moz-selection {
+  background-color: var(--SpText-color);
+  color: #fff;
+}
+*::selection {
+  background-color: var(--SpText-color);
+  color: #fff;
+}
+
+.GoUp {
+  bottom: 5%;
+  right: 3%;
+  opacity: 0;
+  padding: 25px;
+  background: var(--SpText-color);
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  transition: 1s;
+}
+.GoUp:focus-visible {
+  outline: none;
+}/*# sourceMappingURL=GoUp.css.map */

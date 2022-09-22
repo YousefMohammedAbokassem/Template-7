@@ -1,0 +1,36 @@
+@import "../../var";
+
+#Home {
+  position: relative;
+  height: 500px;
+  background-color: wheat;
+  background-image: url(../../../public/images/Home/home-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+
+  > div {
+    height: 500px;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  h1 {
+    color: #5e5e5e;
+  }
+  h2 {
+    color: $spColor;
+  }
+  p {
+    @include media("mdMobile") {
+      width: 50% !important;
+    }
+  }
+  button {
+    background-color: $spColor;
+    color: $mainColor;
+    border: none;
+  }
+}

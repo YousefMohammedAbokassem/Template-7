@@ -1,0 +1,97 @@
+@import "../../var";
+.nav {
+  height: 100px;
+  max-height: 100px;
+  background-color: $mainColor;
+  z-index: 100000;
+  position: sticky;
+  left: 0px;
+  top: 0px;
+  h1 {
+  }
+  > div {
+    position: relative;
+    ul {
+      background: #fff;
+      top: 0px;
+      opacity: 1;
+      pointer-events: auto;
+      transition: $mainTransition;
+      position: relative;
+      @include media("small") {
+        flex-direction: column;
+        top: -300px;
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+      }
+      @include media("mdSmall") {
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        top: 0px !important;
+      }
+      li {
+        //   padding: 10px;
+        width: 100%;
+        @include flexcenter();
+        a {
+          padding: 20px;
+          font-weight: bold;
+          display: block;
+          transition: $mainTransition;
+          color: $textColor;
+          font-size: 1.2rem;
+          @include media("small") {
+            @include flexcenter();
+            width: 100%;
+          }
+          &:hover,
+          &.active {
+            color: $spColor;
+          }
+        }
+      }
+    }
+  }
+  .hover {
+    position: absolute;
+    background: $spColor;
+    width: 55px;
+    left: 19px;
+    height: 3px;
+    bottom: 18px;
+    transition: $mainTransition;
+    @include media("mdSmall") {
+      display: inline;
+    }
+  }
+  ul.active {
+    top: -300px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .navIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    cursor: pointer;
+    span {
+      width: 50px;
+      height: 5px;
+      background-color: $textColor;
+      transition: $mainTransition;
+      &:first-child {
+        transform-origin: left top;
+      }
+      &:nth-child(2) {
+      }
+      &:last-child {
+        transform-origin: left bottom;
+      }
+    }
+  }
+}

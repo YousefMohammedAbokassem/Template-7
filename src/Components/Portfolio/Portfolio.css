@@ -1,0 +1,115 @@
+:root {
+  --main-color: #fff;
+  --text-color: #000;
+  --SpText-color: #eb5424;
+  --main-transition: 0.5s;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+*::-moz-selection {
+  background-color: var(--SpText-color);
+  color: #fff;
+}
+*::selection {
+  background-color: var(--SpText-color);
+  color: #fff;
+}
+
+#Portfolio {
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+#Portfolio > img {
+  background-image: url("/public//images//Portfolio/portfolio-img1.jpg");
+}
+#Portfolio > div ul li {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#Portfolio > div ul li.active {
+  background-color: var(--SpText-color);
+  color: white;
+  border-radius: 23px;
+}
+#Portfolio > div .image {
+  position: relative;
+  transition: 0.5s;
+}
+#Portfolio > div .image::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--SpText-color);
+  opacity: 0.5;
+  pointer-events: none;
+}
+#Portfolio > div .image::after {
+  content: "Show Image";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--SpText-color);
+  background-color: #f8f8f8;
+  padding: 10px 15px;
+  z-index: -1;
+}
+#Portfolio > div .image:hover::before, #Portfolio > div .image:hover::after {
+  z-index: 10;
+}
+
+.imagePopup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  z-index: 100000000000;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagePopup::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+.imagePopup img {
+  z-index: 1;
+}
+.imagePopup span {
+  background: white;
+  padding: 10px;
+  position: absolute;
+  left: 11%;
+  color: var(--SpText-color);
+  top: 31px;
+  z-index: 10;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}/*# sourceMappingURL=Portfolio.css.map */

@@ -1,0 +1,28 @@
+@import "../../var";
+
+#About {
+  //   background-image: url("/public/images/creative/about-bg.jpg");
+  //   background-repeat: no-repeat;
+  //   background-position: center center;
+  //   background-attachment: fixed;
+  background: no-repeat center center fixed
+    url("/public/images/creative/about-bg.jpg");
+  background-size: cover;
+  .info {
+    p {
+      line-height: 1.8;
+    }
+    @include media("mobile") {
+      width: 100% !important;
+    }
+  }
+  .parent {
+  }
+  $colors: (#3b5998 "face", #498cbf "twitt", #cc2127 "pint");
+  @each $color, $social in $colors {
+    .#{$social} {
+      background-color: $color;
+      padding: 100px 0px 100px 50px;
+    }
+  }
+}

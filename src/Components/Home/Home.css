@@ -1,0 +1,55 @@
+:root {
+  --main-color: #fff;
+  --text-color: #000;
+  --SpText-color: #eb5424;
+  --main-transition: 0.5s;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+*::-moz-selection {
+  background-color: var(--SpText-color);
+  color: #fff;
+}
+*::selection {
+  background-color: var(--SpText-color);
+  color: #fff;
+}
+
+#Home {
+  position: relative;
+  height: 500px;
+  background-color: wheat;
+  background-image: url(../../../public/images/Home/home-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+#Home > div {
+  height: 500px;
+  text-align: center;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#Home h1 {
+  color: #5e5e5e;
+}
+#Home h2 {
+  color: var(--SpText-color);
+}
+@media (min-width:768px) {
+  #Home p {
+    width: 50% !important;
+  }
+}
+#Home button {
+  background-color: var(--SpText-color);
+  color: var(--main-color);
+  border: none;
+}/*# sourceMappingURL=Home.css.map */

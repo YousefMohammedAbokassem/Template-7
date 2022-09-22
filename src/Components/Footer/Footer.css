@@ -1,0 +1,30 @@
+:root {
+  --main-color: #fff;
+  --text-color: #000;
+  --SpText-color: #eb5424;
+  --main-transition: 0.5s;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+*::-moz-selection {
+  background-color: var(--SpText-color);
+  color: #fff;
+}
+*::selection {
+  background-color: var(--SpText-color);
+  color: #fff;
+}
+
+.Footer {
+  color: var(--text-color);
+  opacity: 0.8;
+}
+.Footer span {
+  color: var(--SpText-color);
+  font-weight: bold;
+}/*# sourceMappingURL=Footer.css.map */

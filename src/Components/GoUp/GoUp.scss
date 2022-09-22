@@ -1,0 +1,18 @@
+@import "../../var";
+
+.GoUp {
+  bottom: 5%;
+  right: 3%;
+  opacity: 0;
+  padding: 25px;
+  background: $spColor;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  transition: 1s;
+  &:focus-visible{
+    outline: none;
+  }
+}

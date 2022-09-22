@@ -1,0 +1,10 @@
+@import "../../var";
+
+.Footer {
+  color: $textColor;
+  opacity: 0.8;
+  span{
+    color: $spColor;
+    font-weight: bold;
+  }
+}

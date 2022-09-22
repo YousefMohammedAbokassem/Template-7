@@ -1,0 +1,14 @@
+@import "../../var";
+#Contact {
+  //   background-color: red;
+  .info {
+    // width: 60%;
+    input,
+    textarea {
+      padding: 5px 15px;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+}

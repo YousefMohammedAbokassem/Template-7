@@ -1,5 +1,6 @@
 {
-  "name": "template_7",
+  "name": "Template-7",
+  "homepage": "https://YousefMohammedAbokassem.github.io/Template-7/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,13 +11,20 @@
     "@types/node": "^16.11.58",
     "@types/react": "^18.0.19",
     "@types/react-dom": "^18.0.6",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.0",
     "react-scripts": "5.0.1",
+    "swiper": "^8.4.2",
     "typescript": "^4.8.3",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "wow.js": "^1.2.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +47,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "exports-loader": "^4.0.0",
+    "gh-pages": "^4.0.0",
+    "wowjs": "^1.1.3"
   }
 }

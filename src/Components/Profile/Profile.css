@@ -1,0 +1,66 @@
+:root {
+  --main-color: #fff;
+  --text-color: #000;
+  --SpText-color: #eb5424;
+  --main-transition: 0.5s;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+*::-moz-selection {
+  background-color: var(--SpText-color);
+  color: #fff;
+}
+*::selection {
+  background-color: var(--SpText-color);
+  color: #fff;
+}
+
+#Profile .progresses .skill {
+  width: 80%;
+  height: 10px;
+  border-radius: 0 10px 10px 0;
+  background-color: var(--SpText-color);
+  position: relative;
+  transition: 1s;
+}
+#Profile .progresses .skill:not(:last-child) {
+  margin-bottom: 50px;
+}
+@media (max-width:767px) {
+  #Profile .progresses .skill {
+    margin-right: auto;
+  }
+}
+#Profile .progresses .skill > span {
+  top: -27px;
+  position: absolute;
+  text-transform: capitalize;
+}
+#Profile .progresses .skill > span:first-child {
+  left: 0px;
+}
+#Profile .progresses .skill > span:last-child {
+  right: 0;
+}
+#Profile .progresses .skill .span::before {
+  content: "%";
+  right: -14px;
+  position: absolute;
+}
+#Profile .progresses .skill:first-child {
+  transition-delay: 0.2s;
+}
+#Profile .progresses .skill:nth-child(2) {
+  transition-delay: 0.3s;
+}
+#Profile .progresses .skill:nth-child(3) {
+  transition-delay: 0.4s;
+}
+#Profile .progresses .skill:last-child {
+  transition-delay: 0.5s;
+}/*# sourceMappingURL=Profile.css.map */

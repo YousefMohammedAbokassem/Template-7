@@ -1,0 +1,125 @@
+:root {
+  --main-color: #fff;
+  --text-color: #000;
+  --SpText-color: #eb5424;
+  --main-transition: 0.5s;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+*::-moz-selection {
+  background-color: var(--SpText-color);
+  color: #fff;
+}
+*::selection {
+  background-color: var(--SpText-color);
+  color: #fff;
+}
+
+.nav {
+  height: 100px;
+  max-height: 100px;
+  background-color: var(--main-color);
+  z-index: 100000;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0px;
+  top: 0px;
+}
+.nav > div {
+  position: relative;
+}
+.nav > div ul {
+  background: #fff;
+  top: 0px;
+  opacity: 1;
+  pointer-events: auto;
+  transition: var(--main-transition);
+  position: relative;
+}
+@media (max-width:991px) {
+  .nav > div ul {
+    flex-direction: column;
+    top: -300px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+}
+@media (min-width:992px) {
+  .nav > div ul {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    top: 0px !important;
+  }
+}
+.nav > div ul li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav > div ul li a {
+  padding: 20px;
+  font-weight: bold;
+  display: block;
+  transition: var(--main-transition);
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+@media (max-width:991px) {
+  .nav > div ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.nav > div ul li a:hover, .nav > div ul li a.active {
+  color: var(--SpText-color);
+}
+.nav .hover {
+  position: absolute;
+  background: var(--SpText-color);
+  width: 55px;
+  left: 19px;
+  height: 3px;
+  bottom: 18px;
+  transition: var(--main-transition);
+}
+@media (min-width:992px) {
+  .nav .hover {
+    display: inline;
+  }
+}
+.nav ul.active {
+  top: -300px;
+  opacity: 0;
+  pointer-events: none;
+}
+.nav .navIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  cursor: pointer;
+}
+.nav .navIcon span {
+  width: 50px;
+  height: 5px;
+  background-color: var(--text-color);
+  transition: var(--main-transition);
+}
+.nav .navIcon span:first-child {
+  transform-origin: left top;
+}
+.nav .navIcon span:last-child {
+  transform-origin: left bottom;
+}/*# sourceMappingURL=Nav.css.map */

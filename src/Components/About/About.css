@@ -1,0 +1,46 @@
+:root {
+  --main-color: #fff;
+  --text-color: #000;
+  --SpText-color: #eb5424;
+  --main-transition: 0.5s;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+*::-moz-selection {
+  background-color: var(--SpText-color);
+  color: #fff;
+}
+*::selection {
+  background-color: var(--SpText-color);
+  color: #fff;
+}
+
+#About {
+  background: no-repeat center center fixed url("/public/images/creative/about-bg.jpg");
+  background-size: cover;
+}
+#About .info p {
+  line-height: 1.8;
+}
+@media (max-width:767px) {
+  #About .info {
+    width: 100% !important;
+  }
+}
+#About .face {
+  background-color: #3b5998;
+  padding: 100px 0px 100px 50px;
+}
+#About .twitt {
+  background-color: #498cbf;
+  padding: 100px 0px 100px 50px;
+}
+#About .pint {
+  background-color: #cc2127;
+  padding: 100px 0px 100px 50px;
+}/*# sourceMappingURL=About.css.map */

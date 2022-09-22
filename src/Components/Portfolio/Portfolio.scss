@@ -1,0 +1,81 @@
+@import "../../var";
+
+#Portfolio {
+  background-color: #f8f8f8;
+  overflow: hidden;
+  > img {
+    background-image: url('/public//images//Portfolio/portfolio-img1.jpg');
+  }
+  // background-image: url();
+  > div {
+    h1 {
+    }
+    ul {
+      li {
+        cursor: pointer;
+        user-select: none;
+
+        &.active {
+          background-color: $spColor;
+          color: white;
+          border-radius: 23px;
+        }
+      }
+    }
+    .image {
+      position: relative;
+      transition: 0.5s;
+      &::before {
+        z-index: -1;
+        @include overlay($spColor, 0.5);
+        pointer-events: none;
+      }
+      &::after {
+        content: "Show Image";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid $spColor;
+        background-color: #f8f8f8;
+        padding: 10px 15px;
+        z-index: -1;
+      }
+      &:hover::before,
+      &:hover::after {
+        z-index: 10;
+      }
+    }
+  }
+}
+.imagePopup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  z-index: 100000000000;
+  width: 100vw;
+  @include flexcenter();
+  &::before {
+    @include overlay(black, 0.5);
+  }
+  img {
+    z-index: 1;
+  }
+  span {
+    background: white;
+    padding: 10px;
+    position: absolute;
+    left: 11%;
+    color: $spColor;
+    top: 31px;
+    z-index: 10;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    user-select: none;
+    cursor: pointer;
+  }
+}
