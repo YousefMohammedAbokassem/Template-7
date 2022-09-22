@@ -40,42 +40,41 @@ export default function Portfolio() {
     "#Portfolio .gallery .image div img"
   ) as NodeListOf<HTMLImageElement>;
 
-  const popup = () => {
-    images.forEach((img: HTMLImageElement) => {
-      img.addEventListener("click", (e) => {
-        const target = e.target as HTMLImageElement;
-        let div = document.createElement("div") as HTMLDivElement,
-          span = document.createElement("span") as HTMLSpanElement,
-          image = document.createElement("img") as HTMLImageElement;
-        // put the target src
-        div.classList.add("imagePopup");
-        image.src = target.src;
-        image.classList.add("w-75");
-        // add image to the
-        div.appendChild(image);
-        // add X for exit
-        let textX: Text = document.createTextNode("X");
-        span.appendChild(textX);
-        div.appendChild(span);
-        //  exit image
-        span.addEventListener("click", (e) => {
-          const target = e.target as HTMLSpanElement;
-          div.remove();
-          console.log(`first`);
-        });
-        // add popup to the body
-        document.body.appendChild(div);
-        console.log("popup");
-      });
-    });
-  };
+  // const popup = () => {
+  //   images.forEach((img: HTMLImageElement) => {
+  //     img.addEventListener("click", (e) => {
+  //       const target = e.target as HTMLImageElement;
+  //       let div = document.createElement("div") as HTMLDivElement,
+  //         span = document.createElement("span") as HTMLSpanElement,
+  //         image = document.createElement("img") as HTMLImageElement;
+  //       // put the target src
+  //       div.classList.add("imagePopup");
+  //       image.src = target.src;
+  //       image.classList.add("w-75");
+  //       // add image to the
+  //       div.appendChild(image);
+  //       // add X for exit
+  //       let textX: Text = document.createTextNode("X");
+  //       span.appendChild(textX);
+  //       div.appendChild(span);
+  //       //  exit image
+  //       span.addEventListener("click", (e) => {
+  //         const target = e.target as HTMLSpanElement;
+  //         div.remove();
+  //         console.log(`first`);
+  //       });
+  //       // add popup to the body
+  //       document.body.appendChild(div);
+  //       console.log("popup");
+  //     });
+  //   });
+  // };
 
   useEffect(() => {
     axios
       .get("js/data.json")
       .then((res: AxiosResponse) => {
         setInfo(res.data.portfolio);
-        console.log(res.data.portfolio);
       })
       .catch((err: Error) => {
         console.log(err);

@@ -23,42 +23,42 @@
   "portfolio": [
     {
       "id": 1,
-      "image": "Template-7/images/Portfolio/portfolio-img1.jpg",
+      "image": "/Template-7/images/Portfolio/portfolio-img1.jpg",
       "type": "image all html  col-md-6 col-lg-3 p-0"
     },
     {
       "id": 2,
-      "image": "Template-7/images/Portfolio/portfolio-img2.jpg",
+      "image": "/Template-7/images/Portfolio/portfolio-img2.jpg",
       "type": "image all css  col-md-6 col-lg-3 p-0"
     },
     {
       "id": 3,
-      "image": "Template-7/images/Portfolio/portfolio-img3.jpg",
+      "image": "/Template-7/images/Portfolio/portfolio-img3.jpg",
       "type": "image all js  col-md-6 col-lg-3 p-0"
     },
     {
       "id": 4,
-      "image": "Template-7/images/Portfolio/portfolio-img4.jpg",
+      "image": "/Template-7/images/Portfolio/portfolio-img4.jpg",
       "type": "image all react  col-md-6 col-lg-3 p-0"
     },
     {
       "id": 5,
-      "image": "Template-7/images/Portfolio/portfolio-img5.jpg",
+      "image": "/Template-7/images/Portfolio/portfolio-img5.jpg",
       "type": "image all html  col-md-6 col-lg-3 p-0"
     },
     {
       "id": 6,
-      "image": "Template-7/images/Portfolio/portfolio-img1.jpg",
+      "image": "/Template-7/images/Portfolio/portfolio-img1.jpg",
       "type": "image all react  col-md-6 col-lg-3 p-0"
     },
     {
       "id": 7,
-      "image": "Template-7/images/Portfolio/portfolio-img7.jpg",
+      "image": "/Template-7/images/Portfolio/portfolio-img7.jpg",
       "type": " image all js  col-md-6 col-lg-3 p-0"
     },
     {
       "id": 8,
-      "image": "Template-7/images/Portfolio/portfolio-img2.jpg",
+      "image": "/Template-7/images/Portfolio/portfolio-img2.jpg",
       "type": "image all css  col-md-6 col-lg-3 p-0"
     }
   ],
