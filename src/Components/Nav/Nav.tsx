@@ -71,14 +71,14 @@ export default function Nav() {
         }
       });
       //  moving hover part when I arrive to the target section
-      const Work = document.getElementById("Work") as HTMLDivElement,
-        Portfolio = document.getElementById("Portfolio") as HTMLDivElement,
-        Profile = document.getElementById("Profile") as HTMLDivElement,
-        About = document.getElementById("About") as HTMLDivElement,
-        fromRight = document.querySelector(".fromRight") as HTMLDivElement,
-        fromLeft = document.querySelector(".fromLeft") as HTMLDivElement;
-
+      
       window.addEventListener("scroll", function (): void {
+        const Work = document.getElementById("Work") as HTMLDivElement,
+          Portfolio = document.getElementById("Portfolio") as HTMLDivElement,
+          Profile = document.getElementById("Profile") as HTMLDivElement,
+          About = document.getElementById("About") as HTMLDivElement,
+          fromRight = document.querySelector(".fromRight") as HTMLDivElement,
+          fromLeft = document.querySelector(".fromLeft") as HTMLDivElement;
         if (
           window.scrollY <=
           Work.offsetTop + Work.offsetHeight - this.window.innerHeight
@@ -147,7 +147,7 @@ export default function Nav() {
         ) {
           // moving Hover to work li
           hover.style.cssText = "width: 57px;left: 424px;";
-
+          console.log('object');
           links.forEach(function (link: any): void {
             // remove active from all
             link.classList.remove("active");
@@ -159,7 +159,7 @@ export default function Nav() {
       });
     });
     //
-  });
+  },[]);
   /////
   return (
     <nav
