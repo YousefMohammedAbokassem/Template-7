@@ -1,0 +1,126 @@
+{
+  "works": [
+    {
+      "id": 1,
+      "icon_name": "icon fa fa-chain fa-2x",
+      "title": "Mobile Ux",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea ipsam! Voluptas."
+    },
+    {
+      "id": 2,
+      "icon_name": "icon fa fa-bolt fa-2x",
+      "title": "Mobile Ux",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea ipsam! Voluptas."
+    },
+    {
+      "id": 3,
+      "icon_name": "icon fa fa-tachometer fa-2x",
+      "title": "Mobile Ux",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea ipsam! Voluptas."
+    }
+  ],
+
+  "portfolio": [
+    {
+      "id": 1,
+      "image": "/images/Portfolio/portfolio-img1.jpg",
+      "type": "image all html  col-md-6 col-lg-3 p-0"
+    },
+    {
+      "id": 2,
+      "image": "/images/Portfolio/portfolio-img2.jpg",
+      "type": "image all css  col-md-6 col-lg-3 p-0"
+    },
+    {
+      "id": 3,
+      "image": "/images/Portfolio/portfolio-img3.jpg",
+      "type": "image all js  col-md-6 col-lg-3 p-0"
+    },
+    {
+      "id": 4,
+      "image": "/images/Portfolio/portfolio-img4.jpg",
+      "type": "image all react  col-md-6 col-lg-3 p-0"
+    },
+    {
+      "id": 5,
+      "image": "/images/Portfolio/portfolio-img5.jpg",
+      "type": "image all html  col-md-6 col-lg-3 p-0"
+    },
+    {
+      "id": 6,
+      "image": "/images/Portfolio/portfolio-img1.jpg",
+      "type": "image all react  col-md-6 col-lg-3 p-0"
+    },
+    {
+      "id": 7,
+      "image": "/images/Portfolio/portfolio-img7.jpg",
+      "type": " image all js  col-md-6 col-lg-3 p-0"
+    },
+    {
+      "id": 8,
+      "image": "/images/Portfolio/portfolio-img2.jpg",
+      "type": "image all css  col-md-6 col-lg-3 p-0"
+    }
+  ],
+  "resume": [
+    {
+      "id": 1,
+      "info": "Name",
+      "InfoChild": "Yousef Abokassem",
+      "class": "text-capitalize text-center text-md-start"
+    },
+    {
+      "id": 2,
+      "info": "Birthday",
+      "InfoChild": "5/6/2001",
+      "class": "text-capitalize text-center text-md-start"
+    },
+    {
+      "id": 3,
+      "info": "Address",
+      "InfoChild": "countryside of Damascus",
+      "class": "text-capitalize text-center text-md-start"
+    },
+    {
+      "id": 4,
+      "info": "Phone",
+      "InfoChild": "4444 5555 6666",
+      "class": "text-capitalize text-center text-md-start"
+    },
+    {
+      "id": 5,
+      "info": "Email",
+      "InfoChild": "yousef2000q@gmail.com",
+      "class": "text-center text-md-start"
+    },
+    {
+      "id": 6,
+      "info": "Website",
+      "InfoChild": "www.google.com",
+      "class": "text-center text-md-start"
+    }
+  ],
+  "social": [
+    {
+      "id": 1,
+      "icon": "icon fa fa-facebook fa-lg text-black-50",
+      "title": "Follow Me on",
+      "body": "Social Facebook",
+      "social":"col-lg-4 parent face d-flex align-items-center flex-wrap"
+    },
+    {
+      "id": 2,
+      "icon": "icon fa fa-twitter fa-lg text-black-50",
+      "title": "Tweet Me on",
+      "body": "Social twitter",
+      "social": "col-lg-4 parent twitt d-flex align-items-center flex-wrap"
+    },
+    {
+      "id": 3,
+      "icon": "icon fa fa-pinterest fa-lg text-black-50",
+      "title": "Pin Me on",
+      "body": "Social Pinterest",
+      "social": "col-lg-4 parent pint d-flex align-items-center flex-wrap"
+    }
+  ]
+}
