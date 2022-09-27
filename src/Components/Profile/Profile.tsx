@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import axios, { AxiosResponse } from "axios";
 import { setInterval } from "timers";
+import './Profile.css'
 export default function Profile() {
   const [info, setInfo] = useState([]);
   const ProfileSection = document.getElementById("Profile");
