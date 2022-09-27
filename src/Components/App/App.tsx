@@ -14,8 +14,8 @@ function App() {
       <Nav />
       <Option />
       <Routes>
-        <Route path="/Template-7" element={<Container />} />
-        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Template-7/" element={<Container />} />
+        <Route path="/Contact/" element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -172,7 +172,7 @@ export default function Nav() {
           <li className="">
             <span className="hover d-none d-lg-inline"></span>
             <Link
-              to="/Template-7"
+              to="/Template-7/"
               className="text-decoration-none text-capitalize active"
             >
               Home
@@ -203,7 +203,7 @@ export default function Nav() {
           </li>
           <li>
             <Link
-              to="/Contact"
+              to="/Contact/"
               className="text-decoration-none text-capitalize"
             >
               Contact
