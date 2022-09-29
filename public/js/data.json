@@ -24,42 +24,50 @@
     {
       "id": 1,
       "image": "/Template-7/images/Portfolio/portfolio-img1.jpg",
-      "type": "image all html  col-md-6 col-lg-3 p-0"
+      "type": "image all html  col-md-6 col-lg-3 p-0",
+      "tag": "html"
     },
     {
       "id": 2,
       "image": "/Template-7/images/Portfolio/portfolio-img2.jpg",
-      "type": "image all css  col-md-6 col-lg-3 p-0"
+      "type": "image all css  col-md-6 col-lg-3 p-0",
+      "tag": "css"
     },
     {
       "id": 3,
       "image": "/Template-7/images/Portfolio/portfolio-img3.jpg",
-      "type": "image all js  col-md-6 col-lg-3 p-0"
+      "type": "image all js  col-md-6 col-lg-3 p-0",
+      "tag": "js"
     },
     {
       "id": 4,
       "image": "/Template-7/images/Portfolio/portfolio-img4.jpg",
-      "type": "image all react  col-md-6 col-lg-3 p-0"
+      "type": "image all react  col-md-6 col-lg-3 p-0",
+      "tag": "react"
     },
     {
       "id": 5,
       "image": "/Template-7/images/Portfolio/portfolio-img3.jpg",
-      "type": "image all html  col-md-6 col-lg-3 p-0"
+      "type": "image all html  col-md-6 col-lg-3 p-0",
+      "tag": "html"
     },
     {
       "id": 6,
       "image": "/Template-7/images/Portfolio/portfolio-img1.jpg",
-      "type": "image all react  col-md-6 col-lg-3 p-0"
+      "type": "image all react  col-md-6 col-lg-3 p-0",
+      "tag": "react"
     },
     {
       "id": 7,
       "image": "/Template-7/images/Portfolio/portfolio-img2.jpg",
-      "type": " image all js  col-md-6 col-lg-3 p-0"
+      "type": " image all js  col-md-6 col-lg-3 p-0",
+      "tag": "js"
     },
     {
       "id": 8,
       "image": "/Template-7/images/Portfolio/portfolio-img2.jpg",
-      "type": "image all css  col-md-6 col-lg-3 p-0"
+      "type": "image all css  col-md-6 col-lg-3 p-0",
+      "tag": "css"
     }
   ],
   "resume": [
@@ -106,7 +114,7 @@
       "icon": "icon fa fa-facebook fa-lg text-black-50",
       "title": "Follow Me on",
       "body": "Social Facebook",
-      "social":"col-lg-4 parent face d-flex align-items-center flex-wrap"
+      "social": "col-lg-4 parent face d-flex align-items-center flex-wrap"
     },
     {
       "id": 2,
